@@ -2,7 +2,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as homeAction from '../../store/action/homeAction';
+import * as userAction from '../../store/action/userAction';
 import "../style/main.scss";
 
 class HomeComponent extends React.Component{
@@ -21,8 +21,14 @@ class HomeComponent extends React.Component{
 	}
 }
 
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators(homeAction, dispatch)
+function mapStateToProps(state) {
+  return {
+  	state
+  }
 }
 
-export default connect(null, mapDispatchToProps)(HomeComponent);
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(userAction, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomeComponent);

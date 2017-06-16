@@ -9,7 +9,7 @@ module.exports = function(grunt) {
     
     watch: {
       scripts: {
-        files: ['./public/*/component/*.js', './public/*/style/*.scss', './public/store/*'],
+        files: ['./public/*/component/*.js', './public/store/**', './public/*/style/*.scss'],
         tasks: ['webpack'],
         options: {
           interrupt: true,
