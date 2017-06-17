@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -14158,7 +14158,7 @@ var _backbone = __webpack_require__(1);
 
 var _backbone2 = _interopRequireDefault(_backbone);
 
-var _header = __webpack_require__(9);
+var _header = __webpack_require__(10);
 
 var _header2 = _interopRequireDefault(_header);
 
@@ -14187,6 +14187,12 @@ exports.default = _backbone2.default.Router.extend({
 
 /***/ }),
 /* 8 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14204,6 +14210,8 @@ var _router = __webpack_require__(7);
 
 var _router2 = _interopRequireDefault(_router);
 
+__webpack_require__(8);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var router = new _router2.default();
@@ -14211,7 +14219,7 @@ var router = new _router2.default();
 _backbone2.default.history.start();
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14229,15 +14237,13 @@ var _lodash = __webpack_require__(31);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
-var _backbone = __webpack_require__(11);
+var _backbone = __webpack_require__(12);
 
 var _backbone2 = _interopRequireDefault(_backbone);
 
 var _headerView = __webpack_require__(14);
 
 var _headerView2 = _interopRequireDefault(_headerView);
-
-__webpack_require__(13);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14249,12 +14255,17 @@ exports.default = _backbone2.default.ItemView.extend({
 
   onRender: function onRender() {
     this.$el = this.$el.children();
-  }
+  },
 
+  serializeData: function serializeData() {
+    return {
+      menu: [{ title: "HOME", items: ["title1", "title2"] }, { title: "FEATURES", items: ["title1", "title2"] }, { title: "CATEGORY", items: ["title1", "title2"] }, { title: "ABOUT ME", items: ["title1", "title2"] }, { title: "CONTACT", items: ["title1", "title2"] }]
+    };
+  }
 });
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// Backbone.BabySitter
@@ -14451,7 +14462,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// Backbone.Baby
 
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// MarionetteJS (Backbone.Marionette)
@@ -14466,7 +14477,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// MarionetteJS 
 (function(root, factory) {
 
   if (true) {
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(4), __webpack_require__(12), __webpack_require__(10)], __WEBPACK_AMD_DEFINE_RESULT__ = function(Backbone, _) {
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(4), __webpack_require__(13), __webpack_require__(11)], __WEBPACK_AMD_DEFINE_RESULT__ = function(Backbone, _) {
       return (root.Marionette = root.Mn = factory(root, Backbone, _));
     }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -17970,7 +17981,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// MarionetteJS 
 
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// Backbone.Wreqr (Backbone.Marionette)
@@ -18412,19 +18423,23 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// Backbone.Wreq
 
 
 /***/ }),
-/* 13 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Handlebars = __webpack_require__(30);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    return "<div>\n	Hello World\n</div>";
+module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "		  	<li class=\"header_menu_item\">\n		  		"
+    + container.escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"title","hash":{},"data":data}) : helper)))
+    + "\n		  	</li>\n";
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return "<div class=\"header\">\n	<ul class=\"header_menu\">\n"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.menu : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "	</ul>\n</div>";
 },"useData":true});
 
 /***/ }),

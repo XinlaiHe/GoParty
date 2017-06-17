@@ -6,6 +6,7 @@ import { Provider } from 'react-redux'
 import store from "./public/store/store";
 import AppComponent from './public/core/component/appComponent.jsx';
 import HomeComponent from './public/core/component/homeComponent.jsx';
+import "./public/core/style/main.scss";
 
 ReactDOM.render((
 	<Provider store={store}>
