@@ -3,7 +3,18 @@
 		{{#each menu}}
 		  	<li class="header_menu_item">
 		  		{{title}}
+		  		<ul class="header_menu_submenu">
+		  			{{#each items}}
+		  				<li class="header_menu_submenu_item">{{this}}</li>
+		  			{{/each}}
+		  		</ul>
 		  	</li>
 		{{/each}}
 	</ul>
+	<div class="header_search">
+		<div class="header_search_input-wrapper">
+			<input class="header_search_input hidden" placeholder="SEARCH..."/>
+		</div>
+		<span class="header_search_button"></span>
+	</div>
 </div>

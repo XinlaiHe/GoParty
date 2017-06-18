@@ -14251,10 +14251,23 @@ exports.default = _backbone2.default.ItemView.extend({
 
   template: _headerView2.default,
 
+  ui: {
+    searchButton: ".header_search_button",
+    searchInput: ".header_search_input"
+  },
+
+  events: {
+    "click @ui.searchButton": 'clickSearchButton'
+  },
+
   initialize: function initialize() {},
 
+  clickSearchButton: function clickSearchButton() {
+    this.ui.searchInput.toggleClass("hidden");
+  },
+
   onRender: function onRender() {
-    this.$el = this.$el.children();
+    //this.$el = this.$el.children();
   },
 
   serializeData: function serializeData() {
@@ -18429,17 +18442,23 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// Backbone.Wreq
 var Handlebars = __webpack_require__(30);
 function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
-    var helper;
+    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
   return "		  	<li class=\"header_menu_item\">\n		  		"
-    + container.escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"title","hash":{},"data":data}) : helper)))
-    + "\n		  	</li>\n";
+    + container.escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
+    + "\n		  		<ul class=\"header_menu_submenu\">\n"
+    + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.items : depth0),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "		  		</ul>\n		  	</li>\n";
+},"2":function(container,depth0,helpers,partials,data) {
+    return "		  				<li class=\"header_menu_submenu_item\">"
+    + container.escapeExpression(container.lambda(depth0, depth0))
+    + "</li>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "<div class=\"header\">\n	<ul class=\"header_menu\">\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.menu : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "	</ul>\n</div>";
+    + "	</ul>\n	<div class=\"header_search\">\n		<div class=\"header_search_input-wrapper\">\n			<input class=\"header_search_input hidden\" placeholder=\"SEARCH...\"/>\n		</div>\n		<span class=\"header_search_button\"></span>\n	</div>\n</div>";
 },"useData":true});
 
 /***/ }),

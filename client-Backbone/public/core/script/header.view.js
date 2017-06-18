@@ -7,12 +7,25 @@ export default Marionette.ItemView.extend({
 
   template: template,
 
-  initialize :function(){
+  ui: {
+  	searchButton: ".header_search_button",
+  	searchInput: ".header_search_input"
+  },
 
+  events: {
+  	"click @ui.searchButton": 'clickSearchButton'
+  },
+
+  initialize: function(){
+  	
+  },
+
+  clickSearchButton: function() {
+  	this.ui.searchInput.toggleClass("hidden");
   },
 
   onRender: function(){
-  	this.$el = this.$el.children();
+  	//this.$el = this.$el.children();
   },
 
   serializeData() {
