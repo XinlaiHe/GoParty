@@ -14840,7 +14840,7 @@ var HomeComponent = function (_React$Component) {
 	_createClass(HomeComponent, [{
 		key: 'render',
 		value: function render() {
-			var menu = [{ title: "HOME", items: ["title1", "title2"] }, { title: "FEATURES", items: ["title1", "title2"] }, { title: "CATEGORY", items: ["title1", "title2"] }, { title: "ABOUT ME", items: ["title1", "title2"] }, { title: "CONTACT", items: ["title1", "title2"] }];
+			var menu = [{ title: "HOME", items: ["title1", "title2", "title3"] }, { title: "FEATURES", items: ["title1", "title2"] }, { title: "CATEGORY", items: ["title1", "title2"] }, { title: "ABOUT ME", items: ["title1", "title2"] }, { title: "CONTACT", items: ["title1", "title2", "title3", "title4"] }];
 
 			return _react2.default.createElement(
 				'div',
@@ -15058,17 +15058,20 @@ var HeaderComponent = function (_React$Component) {
 	}
 
 	_createClass(HeaderComponent, [{
+		key: "componentDidMount",
+		value: function componentDidMount() {
+			(0, _jquery2.default)(".header_menu_item").hover(function () {
+				(0, _jquery2.default)(".header_menu_submenu", this).toggleClass("visible");
+			});
+		}
+	}, {
 		key: "render",
 		value: function render() {
 			var menu = this.props.menu.map(function (item) {
 				return _react2.default.createElement(
-					"ul",
-					{ className: "header_menu" },
-					_react2.default.createElement(
-						"li",
-						{ key: item.title, className: "header_menu_item" },
-						item.title
-					),
+					"li",
+					{ key: item.title, className: "header_menu_item" },
+					item.title,
 					_react2.default.createElement(
 						"ul",
 						{ className: "header_menu_submenu" },
@@ -15077,7 +15080,7 @@ var HeaderComponent = function (_React$Component) {
 								return _react2.default.createElement(
 									"li",
 									{ key: subitem, className: "header_menu_submenu_item" },
-									"subitem"
+									subitem
 								);
 							});
 						}()
@@ -15088,7 +15091,11 @@ var HeaderComponent = function (_React$Component) {
 			return _react2.default.createElement(
 				"div",
 				{ className: "header" },
-				menu,
+				_react2.default.createElement(
+					"ul",
+					{ className: "header_menu" },
+					menu
+				),
 				_react2.default.createElement(
 					"div",
 					{ className: "header_search" },

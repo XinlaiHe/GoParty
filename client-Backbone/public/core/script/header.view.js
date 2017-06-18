@@ -9,7 +9,8 @@ export default Marionette.ItemView.extend({
 
   ui: {
   	searchButton: ".header_search_button",
-  	searchInput: ".header_search_input"
+  	searchInput: ".header_search_input",
+    headerMenuItem: ".header_menu_item"
   },
 
   events: {
@@ -25,17 +26,19 @@ export default Marionette.ItemView.extend({
   },
 
   onRender: function(){
-  	//this.$el = this.$el.children();
+  	this.ui.headerMenuItem.hover(function(el) {
+      $(".header_menu_submenu", el.currentTarget).toggleClass("visible");
+    });
   },
 
   serializeData() {
   	return {
   		menu: [
   			{ title: "HOME", items: ["title1", "title2"] },
-			{ title: "FEATURES", items: ["title1", "title2"] },
-			{ title: "CATEGORY", items: ["title1", "title2"] },
-			{ title: "ABOUT ME", items: ["title1", "title2"] },
-			{ title: "CONTACT", items: ["title1", "title2"] }
+  			{ title: "FEATURES", items: ["title1", "title2"] },
+  			{ title: "CATEGORY", items: ["title1", "title2"] },
+  			{ title: "ABOUT ME", items: ["title1", "title2"] },
+  			{ title: "CONTACT", items: ["title1", "title2"] }
   		]
   	}
   }

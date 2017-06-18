@@ -7,25 +7,32 @@ export default class HeaderComponent extends React.Component {
 		super(props);
 	}
 
+	componentDidMount() {
+		$(".header_menu_item").hover(function() {
+			$(".header_menu_submenu", this).toggleClass("visible");
+		});
+	}
+
 	render() {
 		const menu = this.props.menu.map((item) => {
 			return (
-				<ul className="header_menu">
-					<li key={item.title} className="header_menu_item">{item.title}</li>
+				<li key={item.title} className="header_menu_item">{item.title}
 					<ul className="header_menu_submenu">
 						{(() => {
 							return item.items.map((subitem) => {
-								return <li key={subitem} className="header_menu_submenu_item">subitem</li>	
+								return <li key={subitem} className="header_menu_submenu_item">{subitem}</li>	
 							})
 						})()}
 					</ul>
-				</ul>
+				</li>
 				)
 		});
 
 		return (
 			<div className="header">
-				{menu}
+				<ul className="header_menu">
+					{menu}
+				</ul>
 				<div className="header_search">
 					<div className="header_search_input-wrapper">
 						<input className="header_search_input hidden" placeholder="SEARCH..."/>

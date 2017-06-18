@@ -14253,7 +14253,8 @@ exports.default = _backbone2.default.ItemView.extend({
 
   ui: {
     searchButton: ".header_search_button",
-    searchInput: ".header_search_input"
+    searchInput: ".header_search_input",
+    headerMenuItem: ".header_menu_item"
   },
 
   events: {
@@ -14267,7 +14268,9 @@ exports.default = _backbone2.default.ItemView.extend({
   },
 
   onRender: function onRender() {
-    //this.$el = this.$el.children();
+    this.ui.headerMenuItem.hover(function (el) {
+      (0, _jquery2.default)(".header_menu_submenu", el.currentTarget).toggleClass("visible");
+    });
   },
 
   serializeData: function serializeData() {
