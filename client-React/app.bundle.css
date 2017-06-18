@@ -5,7 +5,8 @@ body {
   display: block;
   background-color: white;
   height: 64px;
-  padding: 0 40px; }
+  padding: 0 40px;
+  border-bottom: 1px solid #ccc; }
   .header_menu {
     font-size: 12px;
     font-family: "Montserrat", sans-serif;
@@ -39,7 +40,9 @@ body {
       position: absolute;
       width: 180px;
       opacity: 0;
-      transition: all 0.5s ease-in-out; }
+      transition: all 0.5s ease-in-out;
+      box-shadow: 2px 2px 5px #333333;
+      top: 64px; }
       .header_menu_submenu.visible {
         opacity: 1; }
       .header_menu_submenu_item {
