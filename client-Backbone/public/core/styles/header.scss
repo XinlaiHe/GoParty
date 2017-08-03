@@ -12,8 +12,11 @@
 		display: inline-block;
 		padding: 0;
 		height: 100%;
-		top: -3px;
-    	position: relative;
+		display: none;
+
+		@include medium-breakpoint {
+			display: inline-block;
+		}
 
 		&_item {
 			display: inline-block;
@@ -72,6 +75,14 @@
 		float: right;
     	margin-top: 32px;
     	transform: translateY(-12px);
+
+    	@include medium-breakpoint {
+			display: none;
+		}
+		
+		@include large-breakpoint {
+			display: inline-block;
+		}
 
 		&_input-wrapper {
 			height: 30px;

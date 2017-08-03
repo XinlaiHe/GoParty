@@ -2,4 +2,22 @@ body {
 	margin: 0;
 }
 
+@mixin medium-breakpoint {
+	@media screen and (min-width:480px) {
+		@content;
+	}
+}
+
+@mixin large-breakpoint {
+	@media screen and (min-width:768px) {
+		@content;
+	}
+}
+
+@mixin xlarge-breakpoint {
+	@media screen and (min-width:1080px) {
+		@content;
+	}
+}
+
 @import "./header.scss";
