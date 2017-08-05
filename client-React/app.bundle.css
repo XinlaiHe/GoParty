@@ -119,18 +119,22 @@ body {
   box-shadow: 2px 0px 2px lightgrey; }
   .sidebar-hidden {
     transform: translate(-100%);
-    transition: 0.5s all ease-in-out;
+    transition: 0.33s all ease-in-out;
     width: 300px; }
   .sidebar_menu_item {
     border-bottom: 1px solid #ccc;
     list-style: none;
-    padding-left: 20px;
-    padding-top: 20px; }
+    padding: 20px;
+    cursor: pointer; }
     .sidebar_menu_item:last-child {
       border: none; }
-  .sidebar_menu_submenu_item {
-    list-style: none;
-    transition: all 0.5s ease-in-out;
-    cursor: pointer; }
-    .sidebar_menu_submenu_item:hover {
-      color: #c9921b; }
+    .sidebar_menu_item-show-submenu .sidebar_menu_submenu {
+      display: block; }
+  .sidebar_menu_submenu {
+    display: none; }
+    .sidebar_menu_submenu_item {
+      list-style: none;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer; }
+      .sidebar_menu_submenu_item:hover {
+        color: #c9921b; }

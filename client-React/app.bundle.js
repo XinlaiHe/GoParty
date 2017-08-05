@@ -25434,10 +25434,12 @@ var sideBarComponent = function (_React$Component) {
 	_createClass(sideBarComponent, [{
 		key: "render",
 		value: function render() {
+			var _this2 = this;
+
 			var menu = this.props.menu.map(function (item) {
 				return _react2.default.createElement(
 					"li",
-					{ key: item.title, className: "sidebar_menu_item" },
+					{ key: item.title, className: "sidebar_menu_item", onClick: _this2.toggleSubMenu },
 					item.title,
 					_react2.default.createElement(
 						"ul",
@@ -25460,6 +25462,11 @@ var sideBarComponent = function (_React$Component) {
 				{ className: this.props.sidebar == "hidden" ? "sidebar-hidden" : "sidebar" },
 				menu
 			);
+		}
+	}, {
+		key: "toggleSubMenu",
+		value: function toggleSubMenu(event) {
+			(0, _jquery2.default)(event.target).toggleClass("sidebar_menu_item-show-submenu");
 		}
 	}]);
 

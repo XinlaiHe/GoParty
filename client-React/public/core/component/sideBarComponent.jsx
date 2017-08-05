@@ -10,7 +10,7 @@ export default class sideBarComponent extends React.Component {
 	render() {
 		const menu = this.props.menu.map((item) => {
 			return (
-				<li key={item.title} className="sidebar_menu_item">{item.title}
+				<li key={item.title} className="sidebar_menu_item" onClick={this.toggleSubMenu}>{item.title}
 					<ul className="sidebar_menu_submenu">
 						{(() => {
 							return item.items.map((subitem) => {
@@ -27,5 +27,9 @@ export default class sideBarComponent extends React.Component {
 				{menu}
 			</div>
 			)
+	}
+
+	toggleSubMenu(event) {
+		$(event.target).toggleClass("sidebar_menu_item-show-submenu");
 	}
 }

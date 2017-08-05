@@ -8,28 +8,39 @@
 
 	&-hidden {
 		transform: translate(-100%);
-		transition: 0.5s all ease-in-out;
+		transition: 0.33s all ease-in-out;
 		width: 300px;
 	}
 
 	&_menu_item {
 		border-bottom: 1px solid #ccc;
 		list-style: none;
-		padding-left: 20px;
-		padding-top: 20px;
+		padding: 20px;
+		cursor: pointer;
 
 		&:last-child {
 			border: none;
 		}
-	}
 
-	&_menu_submenu_item {
-		list-style: none;
-		transition: all 0.5s ease-in-out;
-		cursor: pointer;
-
-		&:hover {
-			color: #c9921b;
+		&-show-submenu {
+			.sidebar_menu_submenu {
+				display: block;
+			}
 		}
 	}
+
+	&_menu_submenu {
+		display: none;
+
+		&_item {
+			list-style: none;
+			transition: all 0.5s ease-in-out;
+			cursor: pointer;
+
+			&:hover {
+				color: #c9921b;
+			}
+		}
+	}
+	
 }
