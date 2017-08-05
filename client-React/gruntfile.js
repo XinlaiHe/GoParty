@@ -48,6 +48,10 @@ module.exports = function(grunt) {
                       presets: ["es2015", "react"]
                   }
 
+              },
+              {   
+                  test: /\.(jpg|png)$/,
+                  loader: "url-loader"
               }
           ]
         },

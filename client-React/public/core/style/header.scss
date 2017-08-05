@@ -5,6 +5,27 @@
 	padding: 0 40px;
 	border-bottom: 1px solid #ccc;
 
+	&_burger {
+		display: inline-block;
+		height: auto;
+		margin-top: 12px;
+
+		@include medium-breakpoint {
+			display: none;
+		}
+
+		&_top,
+		&_middle,
+		&_bottom {
+			background-color: black;
+			display: block;
+			height: 4px;
+			width: 36px;
+			border-radius: 2px;
+			margin-top: 8px;
+		}
+	}
+
 	&_menu {
 		font-size: 12px;
 		font-family: "Montserrat", sans-serif;
@@ -13,6 +34,7 @@
 		padding: 0;
 		height: 100%;
 		display: none;
+		vertical-align: top;
 
 		@include medium-breakpoint {
 			display: inline-block;
@@ -114,14 +136,10 @@
 			height: 28px;
 		    width: 28px;
 		    display: inline-block;
-		    border: 1px solid #ccc;
 		    vertical-align: bottom;
 		    text-align: center;
-
-			&:before {
-				content: "\d7";
-				font-size: 24px;
-			}
+		    background-image: url("../../asset/search.png");
+		    background-position: -10px -9px;
 		}
 	}
 }

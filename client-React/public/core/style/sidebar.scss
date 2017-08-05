@@ -1,0 +1,35 @@
+.sidebar {
+	width: 300px;
+	height: calc(100% - 65px);
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc; 
+	transition: 1s all ease-in-out;
+	box-shadow: 2px 0px 2px lightgrey;
+
+	&-hidden {
+		transform: translate(-100%);
+		transition: 0.5s all ease-in-out;
+		width: 300px;
+	}
+
+	&_menu_item {
+		border-bottom: 1px solid #ccc;
+		list-style: none;
+		padding-left: 20px;
+		padding-top: 20px;
+
+		&:last-child {
+			border: none;
+		}
+	}
+
+	&_menu_submenu_item {
+		list-style: none;
+		transition: all 0.5s ease-in-out;
+		cursor: pointer;
+
+		&:hover {
+			color: #c9921b;
+		}
+	}
+}

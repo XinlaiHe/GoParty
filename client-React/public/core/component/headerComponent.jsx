@@ -30,6 +30,11 @@ export default class HeaderComponent extends React.Component {
 
 		return (
 			<div className="header">
+				<div className="header_burger" onClick={this.props.toggleSidebar}>
+					<span className="header_burger_top"></span>
+					<span className="header_burger_middle"></span>
+					<span className="header_burger_bottom"></span>
+				</div>
 				<ul className="header_menu">
 					{menu}
 				</ul>

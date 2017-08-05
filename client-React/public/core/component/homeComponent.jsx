@@ -2,8 +2,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as userAction from '../../store/action/userAction';
+import * as sidebarAction from '../../store/action/sidebarAction';
 import HeaderComponent from "./headerComponent.jsx";
+import SideBarComponent from "./sideBarComponent.jsx";
 
 class HomeComponent extends React.Component{
 
@@ -22,7 +23,8 @@ class HomeComponent extends React.Component{
 
 		return (
 			<div className="main">
-				<HeaderComponent menu={menu}/>
+				<HeaderComponent menu={menu} {...this.props}/>
+				<SideBarComponent menu={menu} {...this.props}/>
 			</div>
 
 			)
@@ -30,13 +32,11 @@ class HomeComponent extends React.Component{
 }
 
 function mapStateToProps(state) {
-  return {
-  	state
-  }
+  return state.sidebarReducer
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators(userAction, dispatch)
+  return bindActionCreators(sidebarAction, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomeComponent);
