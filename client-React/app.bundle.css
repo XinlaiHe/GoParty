@@ -1,5 +1,6 @@
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: Source Sans Pro,Helvetica,Arial,sans-serif,Hiragino Kaku Gothic Pro,Meiryo,Hiragino Sans GB W3,Noto Naskh Arabic,Droid Arabic Naskh,Geeza Pro,Simplified Arabic,Noto Sans Thai,Thonburi,Dokchampa,Droid Sans Thai,Droid Sans Fallback,-apple-system,'.SFNSDisplay-Regular',Heiti SC,Microsoft Yahei,Segoe UI; }
 
 .header {
   display: block;
@@ -23,7 +24,6 @@ body {
       margin-top: 8px; }
   .header_menu {
     font-size: 12px;
-    font-family: "Montserrat", sans-serif;
     margin: 0;
     display: inline-block;
     padding: 0;
@@ -135,6 +135,7 @@ body {
     .sidebar_menu_submenu_item {
       list-style: none;
       transition: all 0.5s ease-in-out;
-      cursor: pointer; }
+      cursor: pointer;
+      text-transform: uppercase; }
       .sidebar_menu_submenu_item:hover {
         color: #c9921b; }
