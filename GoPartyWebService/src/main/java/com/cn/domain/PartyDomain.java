@@ -16,7 +16,7 @@ public class PartyDomain {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name = "ActivityNam", nullable = false, unique=true)
+	@Column(name = "ActivityName", nullable = false, unique=true)
 	private String activityName;
 	
 	@Column(name = "Location", nullable = false)
