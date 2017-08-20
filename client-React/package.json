@@ -10,7 +10,9 @@
   "author": "Xinlai He",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.16.2",
     "express": "^4.15.3",
+    "file-loader": "^0.11.2",
     "jquery": "^3.2.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

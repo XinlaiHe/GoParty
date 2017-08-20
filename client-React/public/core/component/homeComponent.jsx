@@ -3,6 +3,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as sidebarAction from '../../store/action/sidebarAction';
+import * as partyAction from '../../store/action/partyAction';
 import HeaderComponent from "./headerComponent.jsx";
 import SideBarComponent from "./sideBarComponent.jsx";
 
@@ -10,6 +11,7 @@ class HomeComponent extends React.Component{
 
 	constructor(props) {
 		super(props);
+		this.props.loadParties();
 	}
 
 	render() {
@@ -23,8 +25,8 @@ class HomeComponent extends React.Component{
 
 		return (
 			<div className="main">
-				<HeaderComponent menu={menu} {...this.props}/>
-				<SideBarComponent menu={menu} {...this.props}/>
+				<HeaderComponent menu={menu} sidebar={this.props.sidebar} toggleSidebar={this.props.toggleSidebar}/>
+				<SideBarComponent menu={menu} sidebar={this.props.sidebar}/>
 			</div>
 
 			)
@@ -32,11 +34,12 @@ class HomeComponent extends React.Component{
 }
 
 function mapStateToProps(state) {
-  return state.sidebarReducer
+
+  return { sidebar: state.sidebarReducer.sidebar, parties: state.partyReducer.parties }
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators(sidebarAction, dispatch)
+  return bindActionCreators(Object.assign({}, partyAction, sidebarAction), dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomeComponent);
