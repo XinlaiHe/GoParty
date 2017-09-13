@@ -6,11 +6,19 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import java.io.Serializable;
+import java.sql.Blob;
 import java.util.Date;
 
 @Entity
 @Table(name="Parties")
-public class PartyDomain {
+public class PartyDomain implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,6 +38,9 @@ public class PartyDomain {
 	
 	@Column(name = "DateTime")
 	private Date dateTime;
+	
+	@Column(name = "Image")
+	private Blob image;
 
 	public int getId() {
 		return id;
@@ -81,5 +92,13 @@ public class PartyDomain {
 	
 	public String toString() {
 		return this.activityName + " " + this.host;
+	}
+
+	public Blob getImage() {
+		return image;
+	}
+
+	public void setImage(Blob image) {
+		this.image = image;
 	}
 }
