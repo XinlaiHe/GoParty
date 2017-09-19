@@ -1,0 +1,290 @@
+2017-09-18 18:46:21,178 [main] INFO  com.cn.core.GoPartyWebServiceApplication - Starting GoPartyWebServiceApplication on bogon with PID 21641 (/Users/hexinlai/Documents/GoParty/GoPartyWebService/target/classes started by hexinlai in /Users/hexinlai/Documents/GoParty/GoPartyWebService)
+2017-09-18 18:46:21,182 [main] INFO  com.cn.core.GoPartyWebServiceApplication - No active profile set, falling back to default profiles: default
+2017-09-18 18:46:21,309 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 18:46:21 CST 2017]; root of context hierarchy
+2017-09-18 18:46:21,781 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-09-18 18:48:01,393 [main] INFO  com.cn.core.GoPartyWebServiceApplication - Starting GoPartyWebServiceApplication on bogon with PID 21650 (/Users/hexinlai/Documents/GoParty/GoPartyWebService/target/classes started by hexinlai in /Users/hexinlai/Documents/GoParty/GoPartyWebService)
+2017-09-18 18:48:01,396 [main] INFO  com.cn.core.GoPartyWebServiceApplication - No active profile set, falling back to default profiles: default
+2017-09-18 18:48:01,565 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 18:48:01 CST 2017]; root of context hierarchy
+2017-09-18 18:48:01,966 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-09-18 18:48:04,052 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-09-18 18:48:04,080 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-09-18 18:48:04,082 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-18 18:48:04,282 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-09-18 18:48:04,282 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2718 ms
+2017-09-18 18:48:04,528 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-18 18:48:04,534 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-18 18:48:04,535 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-18 18:48:04,536 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-18 18:48:04,536 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-18 18:48:04,620 [main] INFO  com.cn.config.DataSourceConfiguration - Start To Set Datasource
+2017-09-18 18:48:04,637 [main] INFO  org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2017-09-18 18:48:04,637 [main] INFO  com.cn.config.DataSourceConfiguration - Set Datasource Successfully
+2017-09-18 18:48:04,940 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-09-18 18:48:04,951 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.1.Final}
+2017-09-18 18:48:04,954 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-09-18 18:48:04,956 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-09-18 18:48:05,475 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-09-18 18:48:05,641 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-09-18 18:48:05,648 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2017-09-18 18:48:06,284 [main] INFO  org.springframework.orm.hibernate4.HibernateTransactionManager - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@29d2d081] of Hibernate SessionFactory for HibernateTransactionManager
+2017-09-18 18:48:06,701 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 18:48:01 CST 2017]; root of context hierarchy
+2017-09-18 18:48:06,831 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/parties],methods=[GET]}" onto public java.util.List<com.cn.domain.PartyDomain> com.cn.controller.MainController.getFlowers()
+2017-09-18 18:48:06,836 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/parties],methods=[POST]}" onto public void com.cn.controller.MainController.addFlower(com.cn.domain.PartyDomain)
+2017-09-18 18:48:06,847 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-18 18:48:06,847 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-18 18:48:06,901 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-18 18:48:06,902 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-18 18:48:06,968 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-18 18:48:07,347 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-09-18 18:48:07,389 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-09-18 18:48:07,414 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-09-18 18:48:07,440 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-09-18 18:48:07,477 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-09-18 18:48:07,486 [main] INFO  com.cn.core.GoPartyWebServiceApplication - Started GoPartyWebServiceApplication in 6.488 seconds (JVM running for 7.284)
+2017-09-18 18:48:21,457 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-18 18:48:21,458 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-18 18:48:21,486 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2017-09-18 18:48:21,529 [http-nio-8080-exec-1] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 18:48:21,851 [http-nio-8080-exec-1] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Failed to write HTTP message: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: No serializer found for class java.io.ByteArrayInputStream and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS); nested exception is com.fasterxml.jackson.databind.JsonMappingException: No serializer found for class java.io.ByteArrayInputStream and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: java.util.ArrayList[0]->com.cn.domain.PartyDomain["image"]->com.sun.proxy.$Proxy73["binaryStream"])
+2017-09-18 18:49:03,893 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 18:48:01 CST 2017]; root of context hierarchy
+2017-09-18 18:49:03,895 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2017-09-18 18:49:07,648 [main] INFO  com.cn.core.GoPartyWebServiceApplication - Starting GoPartyWebServiceApplication on bogon with PID 21651 (/Users/hexinlai/Documents/GoParty/GoPartyWebService/target/classes started by hexinlai in /Users/hexinlai/Documents/GoParty/GoPartyWebService)
+2017-09-18 18:49:07,652 [main] INFO  com.cn.core.GoPartyWebServiceApplication - No active profile set, falling back to default profiles: default
+2017-09-18 18:49:07,760 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 18:49:07 CST 2017]; root of context hierarchy
+2017-09-18 18:49:08,181 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-09-18 18:49:10,066 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-09-18 18:49:10,090 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-09-18 18:49:10,092 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-18 18:49:10,261 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-09-18 18:49:10,261 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2501 ms
+2017-09-18 18:49:10,499 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-18 18:49:10,505 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-18 18:49:10,506 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-18 18:49:10,506 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-18 18:49:10,507 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-18 18:49:10,587 [main] INFO  com.cn.config.DataSourceConfiguration - Start To Set Datasource
+2017-09-18 18:49:10,600 [main] INFO  org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2017-09-18 18:49:10,600 [main] INFO  com.cn.config.DataSourceConfiguration - Set Datasource Successfully
+2017-09-18 18:49:10,859 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-09-18 18:49:10,868 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.1.Final}
+2017-09-18 18:49:10,871 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-09-18 18:49:10,873 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-09-18 18:49:11,329 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-09-18 18:49:11,494 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-09-18 18:49:11,500 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2017-09-18 18:49:12,011 [main] INFO  org.springframework.orm.hibernate4.HibernateTransactionManager - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@62c5bbdc] of Hibernate SessionFactory for HibernateTransactionManager
+2017-09-18 18:49:12,405 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 18:49:07 CST 2017]; root of context hierarchy
+2017-09-18 18:49:12,521 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/parties],methods=[GET]}" onto public java.util.List<com.cn.domain.PartyDomain> com.cn.controller.MainController.getFlowers()
+2017-09-18 18:49:12,526 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/parties],methods=[POST]}" onto public void com.cn.controller.MainController.addFlower(com.cn.domain.PartyDomain)
+2017-09-18 18:49:12,534 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-18 18:49:12,535 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-18 18:49:12,591 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-18 18:49:12,591 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-18 18:49:12,658 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-18 18:49:13,059 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-09-18 18:49:13,085 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-09-18 18:49:13,103 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-09-18 18:49:13,119 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-09-18 18:49:13,141 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-09-18 18:49:13,148 [main] INFO  com.cn.core.GoPartyWebServiceApplication - Started GoPartyWebServiceApplication in 5.875 seconds (JVM running for 6.674)
+2017-09-18 18:49:18,271 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-18 18:49:18,271 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-18 18:49:18,296 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2017-09-18 18:49:18,335 [http-nio-8080-exec-1] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 18:49:35,389 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 18:49:07 CST 2017]; root of context hierarchy
+2017-09-18 18:49:35,392 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2017-09-18 22:01:47,857 [main] INFO  com.cn.core.GoPartyWebServiceApplication - Starting GoPartyWebServiceApplication on hes-MacBook-Air.local with PID 21705 (/Users/hexinlai/Documents/GoParty/GoPartyWebService/target/classes started by hexinlai in /Users/hexinlai/Documents/GoParty/GoPartyWebService)
+2017-09-18 22:01:47,864 [main] INFO  com.cn.core.GoPartyWebServiceApplication - No active profile set, falling back to default profiles: default
+2017-09-18 22:01:48,013 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 22:01:48 CST 2017]; root of context hierarchy
+2017-09-18 22:01:48,607 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-09-18 22:01:50,600 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-09-18 22:01:50,628 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-09-18 22:01:50,630 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-18 22:01:50,831 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-09-18 22:01:50,831 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2818 ms
+2017-09-18 22:01:51,054 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-18 22:01:51,060 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-18 22:01:51,060 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-18 22:01:51,060 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-18 22:01:51,061 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-18 22:01:51,134 [main] INFO  com.cn.config.DataSourceConfiguration - Start To Set Datasource
+2017-09-18 22:01:51,150 [main] INFO  org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2017-09-18 22:01:51,150 [main] INFO  com.cn.config.DataSourceConfiguration - Set Datasource Successfully
+2017-09-18 22:01:51,434 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-09-18 22:01:51,447 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.1.Final}
+2017-09-18 22:01:51,455 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-09-18 22:01:51,459 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-09-18 22:01:52,002 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-09-18 22:01:52,172 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-09-18 22:01:52,179 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2017-09-18 22:01:52,819 [main] INFO  org.springframework.orm.hibernate4.HibernateTransactionManager - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@62c5bbdc] of Hibernate SessionFactory for HibernateTransactionManager
+2017-09-18 22:01:53,231 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 22:01:48 CST 2017]; root of context hierarchy
+2017-09-18 22:01:53,359 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/parties],methods=[GET]}" onto public java.util.List<com.cn.domain.PartyDomain> com.cn.controller.MainController.getFlowers()
+2017-09-18 22:01:53,364 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/parties],methods=[POST]}" onto public void com.cn.controller.MainController.addFlower(com.cn.domain.PartyDomain)
+2017-09-18 22:01:53,371 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-18 22:01:53,372 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-18 22:01:53,426 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-18 22:01:53,426 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-18 22:01:53,497 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-18 22:01:53,925 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-09-18 22:01:53,957 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-09-18 22:01:53,980 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-09-18 22:01:54,005 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-09-18 22:01:54,034 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-09-18 22:01:54,043 [main] INFO  com.cn.core.GoPartyWebServiceApplication - Started GoPartyWebServiceApplication in 6.678 seconds (JVM running for 8.092)
+2017-09-18 22:02:54,222 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-18 22:02:54,222 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-18 22:02:54,250 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2017-09-18 22:02:54,292 [http-nio-8080-exec-1] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:03:02,466 [http-nio-8080-exec-3] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:03:40,414 [http-nio-8080-exec-6] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:12:00,810 [http-nio-8080-exec-9] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:13:12,658 [http-nio-8080-exec-1] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:13:14,454 [http-nio-8080-exec-2] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:13:16,144 [http-nio-8080-exec-3] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:14:38,346 [http-nio-8080-exec-5] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:15:31,868 [http-nio-8080-exec-6] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:17:43,465 [http-nio-8080-exec-8] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:17:51,466 [http-nio-8080-exec-9] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:20:16,831 [http-nio-8080-exec-1] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:28:54,193 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 22:01:48 CST 2017]; root of context hierarchy
+2017-09-18 22:28:54,217 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2017-09-18 22:28:58,376 [main] INFO  com.cn.core.GoPartyWebServiceApplication - Starting GoPartyWebServiceApplication on hes-MacBook-Air.local with PID 21836 (/Users/hexinlai/Documents/GoParty/GoPartyWebService/target/classes started by hexinlai in /Users/hexinlai/Documents/GoParty/GoPartyWebService)
+2017-09-18 22:28:58,380 [main] INFO  com.cn.core.GoPartyWebServiceApplication - No active profile set, falling back to default profiles: default
+2017-09-18 22:28:58,473 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 22:28:58 CST 2017]; root of context hierarchy
+2017-09-18 22:28:58,965 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-09-18 22:29:01,032 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-09-18 22:29:01,060 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-09-18 22:29:01,061 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-18 22:29:01,259 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-09-18 22:29:01,259 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2786 ms
+2017-09-18 22:29:01,491 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-18 22:29:01,497 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-18 22:29:01,498 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-18 22:29:01,498 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-18 22:29:01,498 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-18 22:29:01,587 [main] INFO  com.cn.config.DataSourceConfiguration - Start To Set Datasource
+2017-09-18 22:29:01,603 [main] INFO  org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2017-09-18 22:29:01,604 [main] INFO  com.cn.config.DataSourceConfiguration - Set Datasource Successfully
+2017-09-18 22:29:01,929 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-09-18 22:29:01,940 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.1.Final}
+2017-09-18 22:29:01,943 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-09-18 22:29:01,946 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-09-18 22:29:02,513 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-09-18 22:29:02,685 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-09-18 22:29:02,693 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2017-09-18 22:29:03,331 [main] INFO  org.springframework.orm.hibernate4.HibernateTransactionManager - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@12f3afb5] of Hibernate SessionFactory for HibernateTransactionManager
+2017-09-18 22:29:03,743 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 22:28:58 CST 2017]; root of context hierarchy
+2017-09-18 22:29:03,874 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/parties],methods=[POST]}" onto public void com.cn.controller.MainController.addFlower(com.cn.domain.PartyDomain)
+2017-09-18 22:29:03,879 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/parties],methods=[GET]}" onto public java.util.List<com.cn.domain.PartyDomain> com.cn.controller.MainController.getFlowers()
+2017-09-18 22:29:03,886 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-18 22:29:03,887 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-18 22:29:03,941 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-18 22:29:03,942 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-18 22:29:04,018 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-18 22:29:04,428 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-09-18 22:29:04,460 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-09-18 22:29:04,481 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-09-18 22:29:04,505 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-09-18 22:29:04,532 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-09-18 22:29:04,541 [main] INFO  com.cn.core.GoPartyWebServiceApplication - Started GoPartyWebServiceApplication in 6.609 seconds (JVM running for 7.844)
+2017-09-18 22:29:09,358 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-18 22:29:09,359 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-18 22:29:09,388 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2017-09-18 22:29:09,437 [http-nio-8080-exec-1] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:29:56,367 [http-nio-8080-exec-4] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:33:30,964 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 22:28:58 CST 2017]; root of context hierarchy
+2017-09-18 22:33:30,973 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2017-09-18 22:33:35,328 [main] INFO  com.cn.core.GoPartyWebServiceApplication - Starting GoPartyWebServiceApplication on hes-MacBook-Air.local with PID 21842 (/Users/hexinlai/Documents/GoParty/GoPartyWebService/target/classes started by hexinlai in /Users/hexinlai/Documents/GoParty/GoPartyWebService)
+2017-09-18 22:33:35,333 [main] INFO  com.cn.core.GoPartyWebServiceApplication - No active profile set, falling back to default profiles: default
+2017-09-18 22:33:35,443 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 22:33:35 CST 2017]; root of context hierarchy
+2017-09-18 22:33:35,889 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-09-18 22:33:37,789 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-09-18 22:33:37,814 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-09-18 22:33:37,815 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-18 22:33:38,001 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-09-18 22:33:38,002 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2560 ms
+2017-09-18 22:33:38,247 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-18 22:33:38,254 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-18 22:33:38,255 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-18 22:33:38,255 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-18 22:33:38,255 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-18 22:33:38,333 [main] INFO  com.cn.config.DataSourceConfiguration - Start To Set Datasource
+2017-09-18 22:33:38,346 [main] INFO  org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2017-09-18 22:33:38,346 [main] INFO  com.cn.config.DataSourceConfiguration - Set Datasource Successfully
+2017-09-18 22:33:38,615 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-09-18 22:33:38,624 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.1.Final}
+2017-09-18 22:33:38,627 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-09-18 22:33:38,630 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-09-18 22:33:39,112 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-09-18 22:33:39,245 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-09-18 22:33:39,252 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2017-09-18 22:33:39,748 [main] INFO  org.springframework.orm.hibernate4.HibernateTransactionManager - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@7577b641] of Hibernate SessionFactory for HibernateTransactionManager
+2017-09-18 22:33:40,142 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 22:33:35 CST 2017]; root of context hierarchy
+2017-09-18 22:33:40,263 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/parties],methods=[GET]}" onto public java.util.List<com.cn.domain.PartyDomain> com.cn.controller.MainController.getFlowers()
+2017-09-18 22:33:40,268 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/parties],methods=[POST]}" onto public void com.cn.controller.MainController.addFlower(com.cn.domain.PartyDomain)
+2017-09-18 22:33:40,277 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-18 22:33:40,278 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-18 22:33:40,335 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-18 22:33:40,335 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-18 22:33:40,402 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-18 22:33:40,809 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-09-18 22:33:40,838 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-09-18 22:33:40,859 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-09-18 22:33:40,875 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-09-18 22:33:40,901 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-09-18 22:33:40,909 [main] INFO  com.cn.core.GoPartyWebServiceApplication - Started GoPartyWebServiceApplication in 5.982 seconds (JVM running for 6.819)
+2017-09-18 22:33:44,518 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-18 22:33:44,518 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-18 22:33:44,544 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2017-09-18 22:33:44,579 [http-nio-8080-exec-1] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:33:55,534 [http-nio-8080-exec-4] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:34:16,807 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 22:33:35 CST 2017]; root of context hierarchy
+2017-09-18 22:34:16,809 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2017-09-18 22:34:21,016 [main] INFO  com.cn.core.GoPartyWebServiceApplication - Starting GoPartyWebServiceApplication on hes-MacBook-Air.local with PID 21846 (/Users/hexinlai/Documents/GoParty/GoPartyWebService/target/classes started by hexinlai in /Users/hexinlai/Documents/GoParty/GoPartyWebService)
+2017-09-18 22:34:21,020 [main] INFO  com.cn.core.GoPartyWebServiceApplication - No active profile set, falling back to default profiles: default
+2017-09-18 22:34:21,120 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 22:34:21 CST 2017]; root of context hierarchy
+2017-09-18 22:34:21,522 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-09-18 22:34:23,446 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-09-18 22:34:23,470 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-09-18 22:34:23,472 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-18 22:34:23,647 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-09-18 22:34:23,648 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2528 ms
+2017-09-18 22:34:23,881 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-18 22:34:23,888 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-18 22:34:23,889 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-18 22:34:23,889 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-18 22:34:23,889 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-18 22:34:23,979 [main] INFO  com.cn.config.DataSourceConfiguration - Start To Set Datasource
+2017-09-18 22:34:23,993 [main] INFO  org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2017-09-18 22:34:23,993 [main] INFO  com.cn.config.DataSourceConfiguration - Set Datasource Successfully
+2017-09-18 22:34:24,253 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-09-18 22:34:24,261 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.1.Final}
+2017-09-18 22:34:24,263 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-09-18 22:34:24,266 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-09-18 22:34:24,760 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-09-18 22:34:24,892 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-09-18 22:34:24,898 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2017-09-18 22:34:25,404 [main] INFO  org.springframework.orm.hibernate4.HibernateTransactionManager - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@24855019] of Hibernate SessionFactory for HibernateTransactionManager
+2017-09-18 22:34:25,814 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 22:34:21 CST 2017]; root of context hierarchy
+2017-09-18 22:34:25,929 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/parties],methods=[GET]}" onto public java.util.List<com.cn.domain.PartyDomain> com.cn.controller.MainController.getFlowers()
+2017-09-18 22:34:25,932 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/parties],methods=[POST]}" onto public void com.cn.controller.MainController.addFlower(com.cn.domain.PartyDomain)
+2017-09-18 22:34:25,938 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-18 22:34:25,939 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-18 22:34:25,993 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-18 22:34:25,993 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-18 22:34:26,064 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-18 22:34:26,469 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-09-18 22:34:26,501 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-09-18 22:34:26,523 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-09-18 22:34:26,539 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-09-18 22:34:26,564 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-09-18 22:34:26,570 [main] INFO  com.cn.core.GoPartyWebServiceApplication - Started GoPartyWebServiceApplication in 5.954 seconds (JVM running for 6.77)
+2017-09-18 22:34:36,492 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-18 22:34:36,493 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-18 22:34:36,523 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2017-09-18 22:34:36,582 [http-nio-8080-exec-1] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:34:43,100 [http-nio-8080-exec-2] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:35:01,179 [http-nio-8080-exec-3] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-18 22:37:06,484 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Mon Sep 18 22:34:21 CST 2017]; root of context hierarchy
+2017-09-18 22:37:06,506 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown

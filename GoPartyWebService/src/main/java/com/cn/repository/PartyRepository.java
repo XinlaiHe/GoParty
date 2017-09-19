@@ -1,5 +1,6 @@
 package com.cn.repository;
 
+import java.util.Base64;
 import java.util.List;
 
 import org.hibernate.Criteria;
@@ -17,8 +18,13 @@ public class PartyRepository extends AbstractRepository<PartyDomain> {
 	public List<PartyDomain> getList() {
 		Session session = this.getSession();
 		Criteria criteria = session.createCriteria(PartyDomain.class);
-
-		return criteria.list();
+		List<PartyDomain> parties = criteria.list();
+		
+		for(PartyDomain party : parties) {
+			party.setImage(Base64.getDecoder().decode(party.getImage()));
+		}
+		
+		return parties;
 	}
 
 	@Override

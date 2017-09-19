@@ -1,0 +1,88 @@
+2017-09-19 22:09:00,846 [main] INFO  com.cn.core.GoPartyWebServiceApplication - Starting GoPartyWebServiceApplication on hes-MacBook-Air.local with PID 22265 (/Users/hexinlai/Documents/GoParty/GoPartyWebService/target/classes started by hexinlai in /Users/hexinlai/Documents/GoParty/GoPartyWebService)
+2017-09-19 22:09:00,855 [main] INFO  com.cn.core.GoPartyWebServiceApplication - No active profile set, falling back to default profiles: default
+2017-09-19 22:09:01,005 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Tue Sep 19 22:09:01 CST 2017]; root of context hierarchy
+2017-09-19 22:09:01,543 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-09-19 22:09:04,226 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2017-09-19 22:09:04,263 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-09-19 22:09:04,265 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2017-09-19 22:09:04,492 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-09-19 22:09:04,492 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3488 ms
+2017-09-19 22:09:04,821 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-19 22:09:04,832 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-19 22:09:04,834 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-19 22:09:04,835 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-19 22:09:04,835 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-19 22:09:04,937 [main] INFO  com.cn.config.DataSourceConfiguration - Start To Set Datasource
+2017-09-19 22:09:04,958 [main] INFO  org.springframework.jdbc.datasource.DriverManagerDataSource - Loaded JDBC driver: com.mysql.jdbc.Driver
+2017-09-19 22:09:04,959 [main] INFO  com.cn.config.DataSourceConfiguration - Set Datasource Successfully
+2017-09-19 22:09:05,320 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-09-19 22:09:05,331 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.1.Final}
+2017-09-19 22:09:05,334 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-09-19 22:09:05,337 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-09-19 22:09:06,021 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-09-19 22:09:06,210 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-09-19 22:09:06,217 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2017-09-19 22:09:06,971 [main] INFO  org.springframework.orm.hibernate4.HibernateTransactionManager - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@2c444798] of Hibernate SessionFactory for HibernateTransactionManager
+2017-09-19 22:09:07,463 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Tue Sep 19 22:09:01 CST 2017]; root of context hierarchy
+2017-09-19 22:09:07,632 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/parties],methods=[GET]}" onto public java.util.List<com.cn.domain.PartyDomain> com.cn.controller.MainController.getFlowers()
+2017-09-19 22:09:07,646 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/parties],methods=[POST]}" onto public void com.cn.controller.MainController.addFlower(com.cn.domain.PartyDomain)
+2017-09-19 22:09:07,653 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-19 22:09:07,654 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-19 22:09:07,731 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-19 22:09:07,732 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-19 22:09:07,821 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-19 22:09:08,358 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-09-19 22:09:08,399 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2017-09-19 22:09:08,431 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2017-09-19 22:09:08,460 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-09-19 22:09:08,501 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2017-09-19 22:09:08,510 [main] INFO  com.cn.core.GoPartyWebServiceApplication - Started GoPartyWebServiceApplication in 8.293 seconds (JVM running for 9.676)
+2017-09-19 22:09:12,695 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-19 22:09:12,696 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-19 22:09:12,737 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2017-09-19 22:09:12,796 [http-nio-8080-exec-1] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:10:01,489 [http-nio-8080-exec-4] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:12:53,307 [http-nio-8080-exec-7] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:15:13,342 [http-nio-8080-exec-9] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:16:30,028 [http-nio-8080-exec-1] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:16:32,074 [http-nio-8080-exec-2] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:16:50,422 [http-nio-8080-exec-3] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:18:32,611 [http-nio-8080-exec-5] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:22:53,576 [http-nio-8080-exec-7] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:22:58,243 [http-nio-8080-exec-8] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:30:27,233 [http-nio-8080-exec-10] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:31:25,556 [http-nio-8080-exec-1] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:31:27,265 [http-nio-8080-exec-2] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:31:28,696 [http-nio-8080-exec-3] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:31:30,123 [http-nio-8080-exec-4] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:32:12,037 [http-nio-8080-exec-5] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:32:14,241 [http-nio-8080-exec-6] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:32:49,959 [http-nio-8080-exec-7] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:33:11,684 [http-nio-8080-exec-8] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:33:13,658 [http-nio-8080-exec-9] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:37:30,923 [http-nio-8080-exec-1] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:37:37,035 [http-nio-8080-exec-2] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:39:53,443 [http-nio-8080-exec-4] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:39:57,080 [http-nio-8080-exec-5] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:40:59,440 [http-nio-8080-exec-7] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:41:01,235 [http-nio-8080-exec-8] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:41:04,560 [http-nio-8080-exec-9] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:41:07,050 [http-nio-8080-exec-10] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:41:09,292 [http-nio-8080-exec-1] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:41:10,882 [http-nio-8080-exec-2] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:41:12,483 [http-nio-8080-exec-3] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:41:53,971 [http-nio-8080-exec-4] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:41:56,058 [http-nio-8080-exec-5] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:41:57,479 [http-nio-8080-exec-6] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:41:59,759 [http-nio-8080-exec-7] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:43:54,987 [http-nio-8080-exec-9] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:44:18,266 [http-nio-8080-exec-10] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:44:19,997 [http-nio-8080-exec-1] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:44:22,180 [http-nio-8080-exec-2] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:44:49,530 [http-nio-8080-exec-3] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:44:51,033 [http-nio-8080-exec-4] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:44:52,943 [http-nio-8080-exec-5] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:45:15,274 [http-nio-8080-exec-6] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:45:16,387 [http-nio-8080-exec-7] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-19 22:45:43,904 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Tue Sep 19 22:09:01 CST 2017]; root of context hierarchy
+2017-09-19 22:45:43,906 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown

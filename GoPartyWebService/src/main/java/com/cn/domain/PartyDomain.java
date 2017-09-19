@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.Table;
 
 import java.io.Serializable;
@@ -40,7 +41,7 @@ public class PartyDomain implements Serializable {
 	private Date dateTime;
 	
 	@Column(name = "Image")
-	private Blob image;
+	private byte[] image;
 
 	public int getId() {
 		return id;
@@ -94,11 +95,11 @@ public class PartyDomain implements Serializable {
 		return this.activityName + " " + this.host;
 	}
 
-	public Blob getImage() {
+	public byte[] getImage() {
 		return image;
 	}
 
-	public void setImage(Blob image) {
+	public void setImage(byte[] image) {
 		this.image = image;
 	}
 }

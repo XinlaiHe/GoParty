@@ -6,6 +6,7 @@ import * as sidebarAction from '../../store/action/sidebarAction';
 import * as partyAction from '../../store/action/partyAction';
 import HeaderComponent from "./headerComponent.jsx";
 import SideBarComponent from "./sideBarComponent.jsx";
+import ContentComponent from "./contentComponent.jsx";
 
 class HomeComponent extends React.Component{
 
@@ -27,6 +28,7 @@ class HomeComponent extends React.Component{
 			<div className="main">
 				<HeaderComponent menu={menu} sidebar={this.props.sidebar} toggleSidebar={this.props.toggleSidebar}/>
 				<SideBarComponent menu={menu} sidebar={this.props.sidebar}/>
+				<ContentComponent parties={this.props.parties}/>
 			</div>
 
 			)
