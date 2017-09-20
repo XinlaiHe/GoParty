@@ -5,11 +5,16 @@
 	border-bottom: 1px solid #ccc; 
 	transition: 1s all ease-in-out;
 	box-shadow: 2px 0px 2px lightgrey;
+	position: absolute;
+    z-index: 999;
+    background-color: white;
 
 	&-hidden {
 		transform: translate(-100%);
 		transition: 0.33s all ease-in-out;
 		width: 300px;
+		position: absolute;
+    	z-index: 999;
 	}
 
 	&_menu_item {

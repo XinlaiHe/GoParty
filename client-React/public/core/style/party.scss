@@ -1,0 +1,22 @@
+.parties {
+	display: block;
+	width: 100%;
+
+	&_party {
+		display: inline-block;
+		width: 300px;
+		height: 400px;
+
+		&_title, &_location {
+			display: block;
+			text-align: center;
+			height: 20px;
+		}
+
+		&_image {
+			display: block;
+			width: 100%;
+			height: calc(100% - 2 * 20px);
+		}
+	}
+}

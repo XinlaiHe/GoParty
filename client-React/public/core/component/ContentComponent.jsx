@@ -1,5 +1,6 @@
 "use strict";
 import React from 'react';
+import PartyComponent from './PartyComponent.jsx';
 
 class ContentComponent extends React.Component{
 
@@ -8,19 +9,10 @@ class ContentComponent extends React.Component{
 	}
 
 	render() {
-		const parties = this.props.parties.map(party => {
-			const image = "data:image/jpg;base64," + party.image;
-			return (
-				<div key={party.id}>
-					<h1>{party.activityName}</h1>
-					<h2>{party.location}</h2>
-					<image src={image}/>
-				</div>
-				)
-		});
-
+		const parties = this.props.parties.map(party => <PartyComponent key={party.id} party={party}/>);
+		
 		return (
-			<div>
+			<div className="parties">
 				{parties}
 			</div>
 			)
