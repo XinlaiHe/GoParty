@@ -1,6 +1,6 @@
 "use strict";
 import React from 'react';
-import PartyComponent from './PartyComponent.jsx';
+import SharingComponent from './sharingComponent.jsx';
 
 class ContentComponent extends React.Component{
 
@@ -9,11 +9,11 @@ class ContentComponent extends React.Component{
 	}
 
 	render() {
-		const parties = this.props.parties.map(party => <PartyComponent key={party.id} party={party}/>);
+		const sharings = this.props.sharings.map(sharing => <SharingComponent key={sharing.id} sharing={sharing}/>);
 		
 		return (
-			<div className="parties">
-				{parties}
+			<div className="sharings">
+				{sharings}
 			</div>
 			)
 	}

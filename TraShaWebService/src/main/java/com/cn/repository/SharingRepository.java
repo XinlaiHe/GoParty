@@ -8,19 +8,19 @@ import org.hibernate.Session;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.cn.domain.PartyDomain;
+import com.cn.domain.SharingDomain;
 
 @Repository
-public class PartyRepository extends AbstractRepository<PartyDomain> {
+public class SharingRepository extends AbstractRepository<SharingDomain> {
 	
 	@Override
 	@Transactional
-	public List<PartyDomain> getList() {
+	public List<SharingDomain> getList() {
 		Session session = this.getSession();
-		Criteria criteria = session.createCriteria(PartyDomain.class);
-		List<PartyDomain> parties = criteria.list();
+		Criteria criteria = session.createCriteria(SharingDomain.class);
+		List<SharingDomain> parties = criteria.list();
 		
-		for(PartyDomain party : parties) {
+		for(SharingDomain party : parties) {
 			party.setImage(Base64.getDecoder().decode(party.getImage()));
 		}
 		
@@ -29,7 +29,7 @@ public class PartyRepository extends AbstractRepository<PartyDomain> {
 
 	@Override
 	@Transactional
-	public void add(PartyDomain domain) {
+	public void add(SharingDomain domain) {
 		Session session = this.getSession();
 		session.persist(domain);
 	}

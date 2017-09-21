@@ -13,8 +13,8 @@ import java.sql.Blob;
 import java.util.Date;
 
 @Entity
-@Table(name="Parties")
-public class PartyDomain implements Serializable {
+@Table(name="Sharings")
+public class SharingDomain implements Serializable {
 
 	/**
 	 * 
@@ -25,8 +25,8 @@ public class PartyDomain implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name = "ActivityName", nullable = false, unique=true)
-	private String activityName;
+	@Column(name = "name", nullable = false, unique=true)
+	private String name;
 	
 	@Column(name = "Location", nullable = false)
 	private String location;
@@ -51,12 +51,12 @@ public class PartyDomain implements Serializable {
 		this.id = id;
 	}
 
-	public String getActivityName() {
-		return activityName;
+	public String getName() {
+		return name;
 	}
 
-	public void setActivityName(String activityName) {
-		this.activityName = activityName;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getLocation() {
@@ -89,10 +89,6 @@ public class PartyDomain implements Serializable {
 
 	public void setDateTime(Date dateTime) {
 		this.dateTime = dateTime;
-	}
-	
-	public String toString() {
-		return this.activityName + " " + this.host;
 	}
 
 	public byte[] getImage() {

@@ -147,18 +147,18 @@ body {
       .sidebar_menu_submenu_item:hover {
         color: #c9921b; }
 
-.parties {
+.sharings {
   display: block;
   width: 100%; }
-  .parties_party {
+  .sharings_sharing {
     display: inline-block;
     width: 300px;
     height: 400px; }
-    .parties_party_title, .parties_party_location {
+    .sharings_sharing_title, .sharings_sharing_location {
       display: block;
       text-align: center;
       height: 20px; }
-    .parties_party_image {
+    .sharings_sharing_image {
       display: block;
       width: 100%;
       height: calc(100% - 2 * 20px); }

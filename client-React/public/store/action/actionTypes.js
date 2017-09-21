@@ -2,7 +2,7 @@
 const actionTypes = {
 	USERLOGIN: "USERLOGIN",
 	TOGGLESIDEBAR: "TOGGLESIDEBER",
-	LOADPARTIES: "LOADPARTIES"
+	LOADSHARINGS: "LOADSHARINGS"
 }
 
 export default actionTypes;

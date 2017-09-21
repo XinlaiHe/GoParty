@@ -4062,7 +4062,7 @@ Object.defineProperty(exports, "__esModule", {
 var actionTypes = {
 	USERLOGIN: "USERLOGIN",
 	TOGGLESIDEBAR: "TOGGLESIDEBER",
-	LOADPARTIES: "LOADPARTIES"
+	LOADSHARINGS: "LOADSHARINGS"
 };
 
 exports.default = actionTypes;
@@ -25755,11 +25755,11 @@ var _sidebarAction = __webpack_require__(168);
 
 var sidebarAction = _interopRequireWildcard(_sidebarAction);
 
-var _partyAction = __webpack_require__(167);
+var _sharingAction = __webpack_require__(167);
 
-var partyAction = _interopRequireWildcard(_partyAction);
+var sharingAction = _interopRequireWildcard(_sharingAction);
 
-var _headerComponent = __webpack_require__(165);
+var _headerComponent = __webpack_require__(164);
 
 var _headerComponent2 = _interopRequireDefault(_headerComponent);
 
@@ -25767,7 +25767,7 @@ var _sideBarComponent = __webpack_require__(166);
 
 var _sideBarComponent2 = _interopRequireDefault(_sideBarComponent);
 
-var _contentComponent = __webpack_require__(164);
+var _contentComponent = __webpack_require__(163);
 
 var _contentComponent2 = _interopRequireDefault(_contentComponent);
 
@@ -25789,7 +25789,7 @@ var HomeComponent = function (_React$Component) {
 
 		var _this = _possibleConstructorReturn(this, (HomeComponent.__proto__ || Object.getPrototypeOf(HomeComponent)).call(this, props));
 
-		_this.props.loadParties();
+		_this.props.loadSharings();
 		return _this;
 	}
 
@@ -25803,7 +25803,7 @@ var HomeComponent = function (_React$Component) {
 				{ className: 'main' },
 				_react2.default.createElement(_headerComponent2.default, { menu: menu, sidebar: this.props.sidebar, toggleSidebar: this.props.toggleSidebar }),
 				_react2.default.createElement(_sideBarComponent2.default, { menu: menu, sidebar: this.props.sidebar }),
-				_react2.default.createElement(_contentComponent2.default, { parties: this.props.parties })
+				_react2.default.createElement(_contentComponent2.default, { sharings: this.props.sharings })
 			);
 		}
 	}]);
@@ -25813,11 +25813,11 @@ var HomeComponent = function (_React$Component) {
 
 function mapStateToProps(state) {
 
-	return { sidebar: state.sidebarReducer.sidebar, parties: state.partyReducer.parties };
+	return { sidebar: state.sidebarReducer.sidebar, sharings: state.sharingReducer.sharings };
 }
 
 function mapDispatchToProps(dispatch) {
-	return (0, _redux.bindActionCreators)(Object.assign({}, partyAction, sidebarAction), dispatch);
+	return (0, _redux.bindActionCreators)(Object.assign({}, sharingAction, sidebarAction), dispatch);
 }
 
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(HomeComponent);
@@ -26840,70 +26840,9 @@ var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _sharingComponent = __webpack_require__(165);
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var PartyComponent = function (_React$Component) {
-	_inherits(PartyComponent, _React$Component);
-
-	function PartyComponent(props) {
-		_classCallCheck(this, PartyComponent);
-
-		return _possibleConstructorReturn(this, (PartyComponent.__proto__ || Object.getPrototypeOf(PartyComponent)).call(this, props));
-	}
-
-	_createClass(PartyComponent, [{
-		key: "render",
-		value: function render() {
-			var prefix = "data:image/jpg;base64,";
-			return _react2.default.createElement(
-				"div",
-				{ className: "parties_party" },
-				_react2.default.createElement(
-					"span",
-					{ className: "parties_party_title" },
-					this.props.party.activityName
-				),
-				_react2.default.createElement("img", { className: "parties_party_image", src: prefix + this.props.party.image }),
-				_react2.default.createElement(
-					"span",
-					{ className: "parties_party_location" },
-					this.props.party.location
-				)
-			);
-		}
-	}]);
-
-	return PartyComponent;
-}(_react2.default.Component);
-
-exports.default = PartyComponent;
-
-/***/ }),
-/* 164 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(6);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _PartyComponent = __webpack_require__(163);
-
-var _PartyComponent2 = _interopRequireDefault(_PartyComponent);
+var _sharingComponent2 = _interopRequireDefault(_sharingComponent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26925,14 +26864,14 @@ var ContentComponent = function (_React$Component) {
 	_createClass(ContentComponent, [{
 		key: 'render',
 		value: function render() {
-			var parties = this.props.parties.map(function (party) {
-				return _react2.default.createElement(_PartyComponent2.default, { key: party.id, party: party });
+			var sharings = this.props.sharings.map(function (sharing) {
+				return _react2.default.createElement(_sharingComponent2.default, { key: sharing.id, sharing: sharing });
 			});
 
 			return _react2.default.createElement(
 				'div',
-				{ className: 'parties' },
-				parties
+				{ className: 'sharings' },
+				sharings
 			);
 		}
 	}]);
@@ -26943,7 +26882,7 @@ var ContentComponent = function (_React$Component) {
 exports.default = ContentComponent;
 
 /***/ }),
-/* 165 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27051,6 +26990,67 @@ var HeaderComponent = function (_React$Component) {
 exports.default = HeaderComponent;
 
 /***/ }),
+/* 165 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var SharingComponent = function (_React$Component) {
+	_inherits(SharingComponent, _React$Component);
+
+	function SharingComponent(props) {
+		_classCallCheck(this, SharingComponent);
+
+		return _possibleConstructorReturn(this, (SharingComponent.__proto__ || Object.getPrototypeOf(SharingComponent)).call(this, props));
+	}
+
+	_createClass(SharingComponent, [{
+		key: "render",
+		value: function render() {
+			var prefix = "data:image/jpg;base64,";
+			return _react2.default.createElement(
+				"div",
+				{ className: "sharings_sharing" },
+				_react2.default.createElement(
+					"span",
+					{ className: "sharings_sharing_title" },
+					this.props.sharing.name
+				),
+				_react2.default.createElement("img", { className: "sharings_sharing_image", src: prefix + this.props.sharing.image }),
+				_react2.default.createElement(
+					"span",
+					{ className: "sharings_sharing_location" },
+					this.props.sharing.location
+				)
+			);
+		}
+	}]);
+
+	return SharingComponent;
+}(_react2.default.Component);
+
+exports.default = SharingComponent;
+
+/***/ }),
 /* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -27142,7 +27142,7 @@ exports.default = sideBarComponent;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.loadParties = loadParties;
+exports.loadSharings = loadSharings;
 
 var _store = __webpack_require__(48);
 
@@ -27158,28 +27158,28 @@ var _axios2 = _interopRequireDefault(_axios);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function initializeParties(parties) {
-  return { type: _actionTypes2.default.LOADPARTIES, parties: parties };
+function initializeSharings(sharings) {
+  return { type: _actionTypes2.default.LOADSHARINGS, sharings: sharings };
 }
 
-function loadParties() {
+function loadSharings() {
   return function (dispatch) {
-    return getPartiesFromServer().then(function (response) {
-      dispatch(initializeParties(response.data));
+    return getSharingsFromServer().then(function (response) {
+      dispatch(initializeSharings(response.data));
     }).then(function () {
-      return console.log('After Loading Parties', _store2.default.getState());
+      return console.log('After Loading Sharings', _store2.default.getState());
     }).catch(function (error) {
       return console.log(error);
     });
   };
 }
 
-function getPartiesFromServer() {
-  return _axios2.default.get('http://localhost:8080/parties');
+function getSharingsFromServer() {
+  return _axios2.default.get('http://localhost:8080/sharings');
 }
 
 function getPartyByNameFromServer(name) {
-  return _axios2.default.get('http://localhost:8080/parties' + "/" + name);
+  return _axios2.default.get('http://localhost:8080/sharings' + "/" + name);
 }
 
 /***/ }),
@@ -27229,16 +27229,16 @@ var _sidebarReducer = __webpack_require__(171);
 
 var _sidebarReducer2 = _interopRequireDefault(_sidebarReducer);
 
-var _partyReducer = __webpack_require__(170);
+var _sharingReducer = __webpack_require__(170);
 
-var _partyReducer2 = _interopRequireDefault(_partyReducer);
+var _sharingReducer2 = _interopRequireDefault(_sharingReducer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var coreReducer = (0, _redux.combineReducers)({
 	userReducer: _userReducer2.default,
 	sidebarReducer: _sidebarReducer2.default,
-	partyReducer: _partyReducer2.default
+	sharingReducer: _sharingReducer2.default
 });
 
 exports.default = coreReducer;
@@ -27253,7 +27253,7 @@ exports.default = coreReducer;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = partyReducer;
+exports.default = sharingReducer;
 
 var _actionTypes = __webpack_require__(31);
 
@@ -27261,16 +27261,16 @@ var _actionTypes2 = _interopRequireDefault(_actionTypes);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var initialState = { parties: [] };
+var initialState = { sharings: [] };
 
-function partyReducer() {
+function sharingReducer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
   var action = arguments[1];
 
   switch (action.type) {
-    case _actionTypes2.default.LOADPARTIES:
+    case _actionTypes2.default.LOADSHARINGS:
       return Object.assign({}, state, {
-        parties: action.parties
+        sharings: action.sharings
       });
     default:
       return state;

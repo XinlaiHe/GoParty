@@ -90,3 +90,5 @@
 2017-09-20 20:06:12,901 [http-nio-8080-exec-5] INFO  com.cn.controller.MainController - Getting All Parties
 2017-09-20 20:06:37,180 [http-nio-8080-exec-6] INFO  com.cn.controller.MainController - Getting All Parties
 2017-09-20 20:06:39,754 [http-nio-8080-exec-7] INFO  com.cn.controller.MainController - Getting All Parties
+2017-09-20 20:07:30,555 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1534f01b: startup date [Wed Sep 20 19:25:28 CST 2017]; root of context hierarchy
+2017-09-20 20:07:30,558 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown

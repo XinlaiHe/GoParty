@@ -2,12 +2,12 @@
 import { combineReducers } from 'redux';
 import userReducer from "./userReducer";
 import sidebarReducer from "./sidebarReducer";
-import partyReducer from "./partyReducer";
+import sharingReducer from "./sharingReducer";
 
 const coreReducer = combineReducers({
 	userReducer,
 	sidebarReducer,
-	partyReducer
+	sharingReducer
 })
 
 export default coreReducer;

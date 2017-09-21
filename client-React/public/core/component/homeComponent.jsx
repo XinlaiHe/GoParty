@@ -3,7 +3,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as sidebarAction from '../../store/action/sidebarAction';
-import * as partyAction from '../../store/action/partyAction';
+import * as sharingAction from '../../store/action/sharingAction';
 import HeaderComponent from "./headerComponent.jsx";
 import SideBarComponent from "./sideBarComponent.jsx";
 import ContentComponent from "./contentComponent.jsx";
@@ -12,7 +12,7 @@ class HomeComponent extends React.Component{
 
 	constructor(props) {
 		super(props);
-		this.props.loadParties();
+		this.props.loadSharings();
 	}
 
 	render() {
@@ -28,7 +28,7 @@ class HomeComponent extends React.Component{
 			<div className="main">
 				<HeaderComponent menu={menu} sidebar={this.props.sidebar} toggleSidebar={this.props.toggleSidebar}/>
 				<SideBarComponent menu={menu} sidebar={this.props.sidebar}/>
-				<ContentComponent parties={this.props.parties}/>
+				<ContentComponent sharings={this.props.sharings}/>
 			</div>
 
 			)
@@ -37,11 +37,11 @@ class HomeComponent extends React.Component{
 
 function mapStateToProps(state) {
 
-  return { sidebar: state.sidebarReducer.sidebar, parties: state.partyReducer.parties }
+  return { sidebar: state.sidebarReducer.sidebar, sharings: state.sharingReducer.sharings }
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators(Object.assign({}, partyAction, sidebarAction), dispatch)
+  return bindActionCreators(Object.assign({}, sharingAction, sidebarAction), dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomeComponent);
