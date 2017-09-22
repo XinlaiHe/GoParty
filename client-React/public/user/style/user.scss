@@ -4,8 +4,14 @@
 	background-image: url("../../asset/background1.jpeg");
 	backgroung-repeat: no-repeat;
 	background-size: cover;
-	animation:background 2s ease-in-out
+	animation:background 2s ease-in-out;
 	/*animation:background 5s ease-in-out 2s infinite alternate;*/
+
+	.form {
+		width: 400px;
+		margin: 0 auto;
+		padding-top: 30%;
+	}
 }
 
 @keyframes background {
@@ -13,5 +19,4 @@
 	/*to {background-image: url("../../asset/background1.jpeg");}*/
 	from {opacity: 0;}
 	to {opacity: 1;}
-
 }
