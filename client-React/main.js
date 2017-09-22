@@ -6,6 +6,7 @@ import { Provider } from 'react-redux'
 import store from "./public/store/store";
 import AppComponent from './public/core/component/appComponent.jsx';
 import HomeComponent from './public/core/component/homeComponent.jsx';
+import LoginComponent from './public/user/component/loginComponent.jsx';
 import "./public/core/style/main.scss";
 
 ReactDOM.render((
@@ -13,6 +14,7 @@ ReactDOM.render((
 		<Router history={hashHistory}>
 			<Route component={AppComponent}>
 				<Route path='/' component={HomeComponent} />
+				<Route path='/login' component={LoginComponent} />
 			</Route>
 		</Router>
 	</Provider>

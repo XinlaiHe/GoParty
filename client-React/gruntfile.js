@@ -50,7 +50,7 @@ module.exports = function(grunt) {
 
               },
               {   
-                  test: /\.(jpg|png)$/,
+                  test: /\.(jpg|jpeg|png)$/,
                   loader: "url-loader"
               }
           ]
