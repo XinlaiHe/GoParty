@@ -12,7 +12,7 @@ class FormComponent extends React.Component{
 	render() {
 		const inputFields = this.props.inputFields.map(inputField => {
 			return (
-				<TextField key={inputField.name} hintText={inputField.name} style={inputField.style}/>
+				<TextField id={inputField.id} key={inputField.name} hintText={inputField.name} style={inputField.style}/>
 				)
 		});
 		const links = this.props.links.map(link => {
@@ -22,12 +22,13 @@ class FormComponent extends React.Component{
 		});
 		const buttons = this.props.buttons.map(button => {
 			return (
-				<RaisedButton key={button.name} label={button.name} style={button.style} backgroundColor={button.color}/>
+				<RaisedButton onClick={button.action} key={button.name} label={button.name} style={button.style} backgroundColor={button.color}/>
 				)
 		});
 
 		return (
 			<div className="form">
+				<p className="form_title">{this.props.title}</p>
 				<div className="form_inputs">
 					{inputFields}
 				</div>

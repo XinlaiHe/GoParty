@@ -9,6 +9,10 @@ export default function userReducer(state = initialState, action) {
       return Object.assign({}, state, {
         username: action.username
       })
+    case actionTypes.USERREGISTER:
+      return Object.assign({}, state, {
+        username: action.username
+      })
     default:
       return state
   }
