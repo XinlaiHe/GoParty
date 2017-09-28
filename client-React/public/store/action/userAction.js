@@ -30,9 +30,9 @@ export function login(username, password) {
 }
 
 function serverRegiter(username, password) {
-	return axios.post("http://localhost:8080/user/register", { username, password });
+	return axios.post("http://localhost:8080/user/register", { Username : username, Password : password });
 }
 
 function serverLogin(username, password) {
-	return axios.post("http://localhost:8080/user/login", { username, password });
+	return axios.post("http://localhost:8080/user/login", { Username : username, Password : password });
 }

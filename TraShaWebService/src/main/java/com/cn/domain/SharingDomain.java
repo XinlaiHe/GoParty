@@ -25,7 +25,7 @@ public class SharingDomain implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name = "name", nullable = false, unique=true)
+	@Column(name = "Name", nullable = false, unique=true)
 	private String name;
 	
 	@Column(name = "Location", nullable = false)

@@ -3,6 +3,7 @@ import React from 'react';
 import $ from 'jquery';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import * as userAction from "../../store/action/userAction";
 import FormComponent from '../../core/component/formComponent.jsx';
 
 class LoginComponent extends React.Component{
@@ -22,8 +23,8 @@ class LoginComponent extends React.Component{
 		const content = {
 			title: "User Login",
 			inputFields: [
-				{ name: "username", style: { width: "100%" } },
-				{ name: "password", style: { width: "100%" } }
+				{ name: "username", id:"username", style: { width: "100%" } },
+				{ name: "password", id:"password", style: { width: "100%" } }
 			],
 			links: [
 				{ name: "Forget password?", url: "url", style: { width: "50%" } },
